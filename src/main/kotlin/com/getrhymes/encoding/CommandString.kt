@@ -1,11 +1,14 @@
 package com.getrhymes.encoding
 
-class Encoding(val command: String, val key: String, val inputFile: String) {
+import java.lang.IllegalArgumentException
 
-    fun readerStr (str: String) {
-        val partOfStr = str.split(" ")
-        if (partOfStr.size != 6) throw IllegalArgumentException()
-        
+class CommandString(var command: String, var key: String, var inputFile: String) {
+
+    fun readerStr (str: Array<String>) {
+            if (str.size != 6) throw IllegalArgumentException()
+            command = str[1]
+            key = str[2]
+            inputFile = str[3]
     }
 }
 
