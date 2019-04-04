@@ -1,17 +1,18 @@
 package com.getrhymes.encoding
 
 import java.io.File
+import kotlin.math.abs
 
 
 fun main(args: Array<String>) {
     val string = CommandString("", "", "")
     string.readerStr(args)
-    encoder(CommandString(string.command, string.key, string.inputFile))
+    encoder(CommandString(string.key, string.inputFile, string.outputFile))
 }
 
 
 fun encoder(keyAndFile: CommandString) {
-    val writer = File("outputFile.txt").bufferedWriter()
+    val writer = File(keyAndFile.outputFile).bufferedWriter()
     val keyNS2 = keyAndFile.key
             .toInt(16)
             .toString(2) // Ключ в 2сс
@@ -27,18 +28,7 @@ fun encoder(keyAndFile: CommandString) {
                 val charIn2NS = char.toInt().toString(2) // переводим каждую букву слова в 2сс
                 val partOfStringKey = keyNS2.toCharArray()
                 val partOfStringChar = charIn2NS.toCharArray()
-                listString2NS = when {
-                    keyNS2.length == charIn2NS.length -> {
-                        val mutList = mutableListOf<String>()
-                        for (el in 0 until partOfStringChar.size) {
-                            val sumXOR = ((partOfStringChar[el].toInt() + partOfStringKey[el].toInt()) % 2).toString()
-                            mutList.add(sumXOR) // после цикла получаем двоичный код буквы зашифрованного слова
-                        }
-                        mutList
-                    }
-                    partOfStringChar.size > partOfStringKey.size -> translate(partOfStringChar, partOfStringKey)
-                    else -> translate(partOfStringKey, partOfStringChar) // двоичный код буквы зашифр слова
-                }
+                listString2NS = translate(partOfStringChar, partOfStringKey)
                 listChar.add(listString2NS.joinToString(separator = "").toInt(2).toChar())
             }
             words.add(listChar.joinToString(separator = ""))
@@ -49,24 +39,31 @@ fun encoder(keyAndFile: CommandString) {
     writer.close()
 }
 
-fun revert(n: CharArray): CharArray {
-    var strInv = charArrayOf()
-    for (i in n.size - 1 downTo 0) {
-        strInv+= n[i]
+fun translate(partOfStringChar: CharArray, partOfStringKey: CharArray): List<String> {
+    val difference = abs(partOfStringChar.size - partOfStringKey.size)
+    fun sumXOR (EqualCharStr: CharArray, partOfString: CharArray): MutableList<String> {
+        val mutList = mutableListOf<String>()
+        for (el in 0 until EqualCharStr.size) {
+            val sumXOR = ((EqualCharStr[el].toInt() + partOfString[el].toInt()) % 2).toString()
+            mutList.add(sumXOR)
+        }
+        return mutList
     }
-    return strInv
-} // возвращает обратный порядок букв
-
-fun translate(partOfString1: CharArray, partOfString2: CharArray): List<String> {
-    val list = mutableListOf<String>()
-    val difference = partOfString1.size - partOfString2.size
-    var revertStr = revert(partOfString2)
-    for (i in 0 until difference) revertStr += '0'
-    val keyEqualCharStr = revert(revertStr)
-    for (el in 0 until keyEqualCharStr.size) {
-        val sumXOR = ((keyEqualCharStr[el].toInt() + partOfString1[el].toInt()) % 2).toString()
-        list.add(sumXOR)
+    fun revertString(partOfStringChar1: CharArray): CharArray {
+        var revertStr = partOfStringChar1.reversedArray()
+        for (i in 0 until difference) revertStr += '0'
+        return revertStr.reversedArray()
     }
-    return list
+    return when {
+        partOfStringChar.size > partOfStringKey.size -> {
+            val revertStr = revertString(partOfStringKey)
+            sumXOR(revertStr, partOfStringChar)
+        }
+        partOfStringChar.size < partOfStringKey.size -> {
+            val revertStr =revertString(partOfStringChar)
+            sumXOR(revertStr, partOfStringKey)
+        }
+        else -> sumXOR(partOfStringChar, partOfStringKey)
+    }
 } // возвращает букву зашифрованного слова в двоичном коде
 

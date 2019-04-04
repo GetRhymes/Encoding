@@ -2,13 +2,15 @@ package com.getrhymes.encoding
 
 import java.lang.IllegalArgumentException
 
-class CommandString(var command: String, var key: String, var inputFile: String) {
+class CommandString(var key: String, var inputFile: String, var outputFile: String) {
 
     fun readerStr (str: Array<String>) {
-            if (str.size != 6) throw IllegalArgumentException()
-            command = str[1]
-            key = str[2]
-            inputFile = str[3]
+        key = str[2]
+        inputFile = str[3]
+        outputFile =
+                if (str.size == 6 ) str[5]
+                else "outputFile.txt"
+
     }
 }
 
