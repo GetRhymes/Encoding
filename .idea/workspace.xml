@@ -68,22 +68,22 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="kt" value="5252" />
-          <entry key="txt" value="178" />
+          <entry key="kt" value="5265" />
+          <entry key="txt" value="211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="Kotlin" value="5252" />
-          <entry key="PLAIN_TEXT" value="178" />
+          <entry key="Kotlin" value="5265" />
+          <entry key="PLAIN_TEXT" value="211" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -96,19 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputFile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#36#160#0" expanded="true" />
               </folding>
@@ -129,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/inputFile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -569,7 +560,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554337242987" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554337365677" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/ideadir" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -667,12 +658,26 @@
     <history-entry file="TestEncoding_test1 - 2019.04.04 at 03h 13m 32s.xml">
       <configuration name="TestEncoding.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestEncoding_test1 - 2019.04.04 at 03h 18m 10s.xml">
+      <configuration name="TestEncoding.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEncoding_test1 - 2019.04.04 at 03h 19m 07s.xml">
+      <configuration name="TestEncoding.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEncoding_test1 - 2019.04.04 at 03h 20m 32s.xml">
+      <configuration name="TestEncoding.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEncoding_test1 - 2019.04.04 at 03h 20m 44s.xml">
+      <configuration name="TestEncoding.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEncoding - 2019.04.04 at 03h 21m 30s.xml">
+      <configuration name="TestEncoding" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20064725" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20064725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -681,13 +686,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8558247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32295272" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32295272" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3160323" />
       <window_info anchor="bottom" id="Build" order="10" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3298731" />
@@ -749,10 +754,34 @@
     <entry file="file://$PROJECT_DIR$/resultTest1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/CommandString.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inputFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#36#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -762,30 +791,6 @@
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#32#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/CommandString.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding>
-            <element signature="e#36#160#0" expanded="true" />
           </folding>
         </state>
       </provider>
