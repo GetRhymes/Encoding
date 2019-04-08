@@ -10,7 +10,6 @@ fun main(args: Array<String>) {
     encoder(CommandString(string.key, string.inputFile, string.outputFile))
 }
 
-
 fun encoder(keyAndFile: CommandString) {
     val writer = File(keyAndFile.outputFile).bufferedWriter()
     val keyNS2 = keyAndFile.key
@@ -39,28 +38,30 @@ fun encoder(keyAndFile: CommandString) {
     writer.close()
 }
 
+private fun sumXOR (EqualCharStr: CharArray, partOfString: CharArray): MutableList<String> {
+    val mutList = mutableListOf<String>()
+    for (el in 0 until EqualCharStr.size) {
+        val sumXOR = ((EqualCharStr[el].toInt() + partOfString[el].toInt()) % 2).toString()
+        mutList.add(sumXOR)
+    }
+    return mutList
+}
+
+private fun revertString(partOfStringChar1: CharArray, partOfStringChar2: CharArray): CharArray {
+    val difference = abs(partOfStringChar1.size - partOfStringChar2.size)
+    var revertStr = partOfStringChar1.reversedArray()
+    for (i in 0 until difference) revertStr += '0'
+    return revertStr.reversedArray()
+}
+
 fun translate(partOfStringChar: CharArray, partOfStringKey: CharArray): List<String> {
-    val difference = abs(partOfStringChar.size - partOfStringKey.size)
-    fun sumXOR (EqualCharStr: CharArray, partOfString: CharArray): MutableList<String> {
-        val mutList = mutableListOf<String>()
-        for (el in 0 until EqualCharStr.size) {
-            val sumXOR = ((EqualCharStr[el].toInt() + partOfString[el].toInt()) % 2).toString()
-            mutList.add(sumXOR)
-        }
-        return mutList
-    }
-    fun revertString(partOfStringChar1: CharArray): CharArray {
-        var revertStr = partOfStringChar1.reversedArray()
-        for (i in 0 until difference) revertStr += '0'
-        return revertStr.reversedArray()
-    }
     return when {
         partOfStringChar.size > partOfStringKey.size -> {
-            val revertStr = revertString(partOfStringKey)
+            val revertStr = revertString(partOfStringKey, partOfStringChar)
             sumXOR(revertStr, partOfStringChar)
         }
         partOfStringChar.size < partOfStringKey.size -> {
-            val revertStr =revertString(partOfStringChar)
+            val revertStr =revertString(partOfStringChar, partOfStringKey)
             sumXOR(revertStr, partOfStringKey)
         }
         else -> sumXOR(partOfStringChar, partOfStringKey)

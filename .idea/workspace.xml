@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd98c61b-9cd6-4e80-817a-83e71782fe4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt" afterDir="false" />
+    <list default="true" id="cd98c61b-9cd6-4e80-817a-83e71782fe4f" name="Default Changelist" comment="completed project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/encoding/CommandString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/encoding/CommandString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/encoding/Encoding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/getrhymes/encoding/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/getrhymes/encoding/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputFile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/CommandString.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/CommandString.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/Main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,7 +22,7 @@
     <session id="-839188350">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
@@ -42,8 +34,9 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,14 +62,14 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="kt" value="5265" />
-          <entry key="txt" value="211" />
+          <entry key="txt" value="228" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="Kotlin" value="5265" />
-          <entry key="PLAIN_TEXT" value="211" />
+          <entry key="PLAIN_TEXT" value="228" />
         </counts>
       </usages-collector>
     </session>
@@ -86,7 +79,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="-184">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#32#74#0" expanded="true" />
@@ -98,11 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#36#160#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -137,6 +127,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="GetRhymes" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="EncodingGetrhymes" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -492,7 +487,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="640" />
     <option name="height" value="984" />
   </component>
@@ -502,6 +497,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -552,15 +549,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554337465789" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554337750681" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/ideadir" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -646,6 +641,14 @@
       <option name="presentableId" value="Default" />
       <updated>1552151689170</updated>
     </task>
+    <task id="LOCAL-00001" summary="completed project">
+      <created>1554337551776</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554337551777</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -677,7 +680,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20064725" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2038835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -692,7 +695,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32295272" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32295272" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3160323" />
       <window_info anchor="bottom" id="Build" order="10" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3298731" />
@@ -709,6 +712,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed project" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -744,15 +751,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nik">
+    <entry file="file://$PROJECT_DIR$/nik" />
+    <entry file="file://$PROJECT_DIR$/resultTest1.txt" />
+    <entry file="file://$PROJECT_DIR$/outputFile.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
+        <state relative-caret-position="340">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultTest1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/CommandString.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -768,26 +775,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/com/getrhymes/encodingTest/TestEncoding.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#36#160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/getrhymes/encoding/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="-184">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#32#74#0" expanded="true" />
